@@ -21,7 +21,7 @@ The method is not a linear process. It is an **iterative cycle**:
         ┌──────────────────────────────────────────────┐
         ↓                                              ↑
 Ask → Listen → Understand → Recode → Hack + Evaluate
- 01    02a→02b      03          04        05 + 06
+ 01    02a→02b      03          04        05a + 05b
 ```
 
 Each cycle deepens the practice. Practitioners do not restart from scratch — they update their listening, sharpen their strategy, and refine their message based on what the previous hack revealed.
@@ -40,8 +40,8 @@ For the full theoretical foundation — metacrisis, narrative theory, the politi
 | **02b · Research** | Research | Executes large-scale digital research and organises Small Listening data |
 | **03 · Understand** | Analysis | ANP analysis, language/frame analysis, community mapping, Window of Discourse |
 | **04 · Recode** | Narrative Strategy | Decodes dominant narratives, builds alternative reframes, produces the message |
-| **05 · Hack** | Hacking Tree | Translates the message into a cultural intervention: Media, Meme, Tone, Space, Scale, Moment |
-| **06 · Impact** | Evaluate + Iterate | Assesses impact at three levels, produces case study, feeds the next cycle |
+| **05a · Hack** | Hacking Tree | Translates the message into a cultural intervention: Media, Meme, Tone, Space, Scale, Moment |
+| **05b · Impact** | Evaluate + Iterate | Assesses impact at three levels, produces case study, feeds the next cycle |
 
 ---
 
@@ -53,7 +53,7 @@ Every agent runs in at least two modes:
 
 **Learning Mode 🌱 (activated on request)** — works step by step, explaining each concept and decision. For newcomers, facilitators, or anyone who wants to understand *why*. Activated by including "learning mode" anywhere in your prompt.
 
-Some agents add specialised modes documented in their own Instructions — for example, Agent 01's Poetic Manifesto, the Iteration mode in Agents 02a/02b/03, Agent 02b's Multi-Inquiry and Small-Listening-only modes, and the Stand-alone mode in Agents 04/05.
+Some agents add specialised modes documented in their own Instructions — for example, Agent 01's Poetic Manifesto, the Iteration mode in Agents 02a/02b/03, Agent 02b's Multi-Inquiry and Small-Listening-only modes, and the Stand-alone mode in Agents 04/05a.
 
 The Culture Hack Method was designed to be learned through doing. The agents should accelerate that learning, not shortcut it.
 
@@ -87,7 +87,7 @@ KB_AI_Fluency.md            ← Ethical AI use, the 4Ds framework
 KB_Agent_Directory.md       ← System map, handoff chain, I/O contracts
 ```
 
-The exact file set varies by agent — some split their Actions KB and some add specialised KBs (e.g. `KB_02a_SmallListening.md`, `KB_02b_MultiInquiry.md`, `KB_03_MapCheck.md`). A few agents do not need a Tools or Prompting file. See [`INDEX.md`](INDEX.md) for the authoritative, up-to-date list, and [`INSTALL.md`](INSTALL.md) for deployment.
+The exact file set varies by agent — some split their Actions KB and some add specialised KBs (e.g. `KB_02a_Listen_SmallListening.md`, `KB_02b_Research_MultiInquiry.md`, `KB_03_Understand_MapCheck.md`). A few agents do not need a Tools or Prompting file. See [`INDEX.md`](INDEX.md) for the authoritative, up-to-date list, and [`INSTALL.md`](INSTALL.md) for deployment.
 
 ---
 
@@ -106,3 +106,5 @@ This toolkit is designed to grow with practice. If you use these agents, encount
 ---
 
 *Built for the practitioners working to rewild the narrative space.*
+
+*v2.0.0 · updated 2026-07-05 · CHL AI Agent System.*

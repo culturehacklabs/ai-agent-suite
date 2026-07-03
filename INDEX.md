@@ -1,6 +1,6 @@
 # INDEX — CHL AI Agent System
 
-Complete reference for all agents, files, and capabilities. Reflects the current file inventory after the June 2026 cleanup.
+Complete reference for all agents, files, and capabilities. Reflects the current file inventory as of the v2.0.0 release (July 2026).
 
 ---
 
@@ -10,7 +10,7 @@ Complete reference for all agents, files, and capabilities. Reflects the current
         ┌──────────────────────────────────────────────┐
         ↓                                              ↑
 Ask → Listen → Understand → Recode → Hack + Evaluate
- 01    02a→02b      03          04        05 + 06
+ 01    02a→02b      03          04        05a + 05b
 ```
 
 Entry point for any question or navigation: **Agent 00 · Q&A**
@@ -19,7 +19,7 @@ Entry point for any question or navigation: **Agent 00 · Q&A**
 
 ## Shared Files
 
-These files are shared across all agents. They are never loaded by default — only when a specific need arises. (As of June 2026 they carry their canonical, unversioned names; the older `_v#` files and the duplicate Agent Directory have been retired.)
+These files are shared across all agents. They are never loaded by default — only when a specific need arises. (They carry their canonical, unversioned names; the older `_v#` files and the duplicate Agent Directory were retired in the June 2026 cleanup, and `KB_AI_Fluency_v3.md` was renamed to `KB_AI_Fluency.md` in v2.0.0.)
 
 | File | Purpose | Load when |
 |------|---------|-----------|
@@ -76,12 +76,12 @@ These files are shared across all agents. They are never loaded by default — o
 
 | File | Contents |
 |------|---------|
-| `02a_Instructions.md` | System prompt: modes (incl. Iteration), KB index, workflow, feasibility check |
-| `KB_02a_Module.md` | Listen phase theory, Listening Model structure, five parameters, documentation questions, iteration |
-| `KB_02a_Actions.md` | Listening Model template, Big Listening Inquiry template, Iteration Cycle update |
-| `KB_02a_Prompting.md` | Starter and power prompts for new and iterating practitioners |
-| `KB_02a_Tools.md` | No execution tools at this stage; describes what travels to 02b |
-| `KB_02a_SmallListening.md` | Small Listening instrument design: interview guides, observation frameworks, survey design |
+| `02a_Listen_Instructions.md` | System prompt: modes (incl. Iteration), KB index, workflow, feasibility check |
+| `KB_02a_Listen_Module.md` | Listen phase theory, Listening Model structure, five parameters, documentation questions, iteration |
+| `KB_02a_Listen_Actions.md` | Listening Model template, Big Listening Inquiry template, Iteration Cycle update |
+| `KB_02a_Listen_Prompting.md` | Starter and power prompts for new and iterating practitioners |
+| `KB_02a_Listen_Tools.md` | No execution tools at this stage; describes what travels to 02b |
+| `KB_02a_Listen_SmallListening.md` | Small Listening instrument design: interview guides, observation frameworks, survey design |
 
 **Receives:** Short POV (or updated POV + Case Study on iteration) · **Produces:** Listening Model + Big Listening Inquiry · **Passes to:** Agent 02b
 *(6 files.)*
@@ -98,12 +98,12 @@ These files are shared across all agents. They are never loaded by default — o
 
 | File | Contents |
 |------|---------|
-| `02b_Instructions.md` | System prompt: NO INVENTION, five modes, KB index, 7-step workflow |
-| `KB_02b_Module.md` | Research phase theory, key concepts, research process, iteration + Small-Listening-only paths, boundary with 03 |
-| `KB_02b_Actions.md` | Narrative Report (A), CSV Database (B), ANP Source Library (C), Handoff Checklist templates |
-| `KB_02b_Prompting.md` | Starter and power prompts for Big and Small Listening workflows |
-| `KB_02b_Tools.md` | Exa Search MCP + Claude Research Mode; guidance for alternative tools |
-| `KB_02b_MultiInquiry.md` | Multi-Inquiry Mode workflow — multiple Big Listening Inquiries combined into one report |
+| `02b_Research_Instructions.md` | System prompt: NO INVENTION, five modes, KB index, 7-step workflow |
+| `KB_02b_Research_Module.md` | Research phase theory, key concepts, research process, iteration + Small-Listening-only paths, boundary with 03 |
+| `KB_02b_Research_Actions.md` | Narrative Report (A), CSV Database (B), ANP Source Library (C), Handoff Checklist templates |
+| `KB_02b_Research_Prompting.md` | Starter and power prompts for Big and Small Listening workflows |
+| `KB_02b_Research_Tools.md` | Exa Search MCP + Claude Research Mode; guidance for alternative tools |
+| `KB_02b_Research_MultiInquiry.md` | Multi-Inquiry Mode workflow — multiple Big Listening Inquiries combined into one report |
 
 **Receives:** Big Listening Inquiry (+ Small Listening data) · **Produces:** Narrative Report + CSV Database + ANP Source Library + Handoff Checklist · **Passes to:** Agent 03
 *(6 files.)*
@@ -118,12 +118,12 @@ These files are shared across all agents. They are never loaded by default — o
 
 | File | Contents |
 |------|---------|
-| `03_Instructions.md` | System prompt: modes, 6-step analytical sequence, Map Check-in as mandatory step, KB index |
-| `KB_03_Module.md` | Understand phase theory, all key concepts (ANP, frame analysis, Justice/Ontology map with Ontofake note, Acupuncture Points, Window of Discourse), Strategic Insights vs. Narrative Intentions, iteration |
-| `KB_03_Actions.md` | Community Analysis Report template, ANP/Language/Window templates, Narrative Map JSON, axis-conversion note |
-| `KB_03_Prompting.md` | Starter and power prompts (Ontofake identification, missing ANP sources, fit issues) |
-| `KB_03_Tools.md` | Narrative mapper guidance, JSON schema, Mermaid format, axis conversion formula |
-| `KB_03_MapCheck.md` | Map Check-in protocol — the co-creation moment between ANP and Language Analysis |
+| `03_Understand_Instructions.md` | System prompt: modes, 6-step analytical sequence, Map Check-in as mandatory step, KB index |
+| `KB_03_Understand_Module.md` | Understand phase theory, all key concepts (ANP, frame analysis, Justice/Ontology map with Ontofake note, Acupuncture Points, Window of Discourse), Strategic Insights vs. Narrative Intentions, iteration |
+| `KB_03_Understand_Actions.md` | Community Analysis Report template, ANP/Language/Window templates, Narrative Map JSON, axis-conversion note |
+| `KB_03_Understand_Prompting.md` | Starter and power prompts (Ontofake identification, missing ANP sources, fit issues) |
+| `KB_03_Understand_Tools.md` | Narrative mapper guidance, JSON schema, Mermaid format, axis conversion formula |
+| `KB_03_Understand_MapCheck.md` | Map Check-in protocol — the co-creation moment between ANP and Language Analysis |
 
 **Receives:** Narrative Report + CSV Database + ANP Source Library + Handoff Checklist · **Produces:** Community Analysis Report + Narrative Map · **Passes to:** Agent 04
 *(6 files. Status: needs revision — see audit. Known issues: missing Window-of-Discourse heading in the Module; Mermaid coordinate inconsistency between MapCheck and Actions/Tools.)*
@@ -144,46 +144,46 @@ These files are shared across all agents. They are never loaded by default — o
 | `KB_04_Recode_Actions_B.md` | Decode table + Recode table (eight lenses), Message block, framing synthesis |
 | `KB_04_Recode_Actions_C.md` | Narrative Strategy template |
 
-**Receives:** Community Analysis Report + Narrative Map + Window of Discourse · **Produces:** Narrative Strategy + Recoded Narrative (with Message) + Audience Profile(s) · **Passes to:** Agent 05
+**Receives:** Community Analysis Report + Narrative Map + Window of Discourse · **Produces:** Narrative Strategy + Recoded Narrative (with Message) + Audience Profile(s) · **Passes to:** Agent 05a
 *(5 files. Status: needs revision — `KB_04_Recode_Prompting.md` and `KB_04_Recode_Tools.md` are referenced by the Instructions but not yet created. Pending.)*
 
 ---
 
-## Agent 05 · Hack — Hacking Tree
+## Agent 05a · Hack — Hacking Tree
 
-**Phase:** Hack · **Primary users:** Practitioners designing a cultural intervention · **Stand-alone:** Yes (needs a light Audience Profile)
+**Phase:** Hack (05a) · **Primary users:** Practitioners designing a cultural intervention · **Stand-alone:** Yes (needs a light Audience Profile)
 
 **What it does:** Translates the recoded message into a concrete intervention through the Hacking Tree (Media, Meme, Tone, Hack: Space/Scale/Moment) plus a Logistics Plan. Available in Lean or Full Logistics modes.
 
 | File | Contents |
 |------|---------|
-| `05_Hack_Instructions.md` | System prompt: modes, stand-alone path with Audience Profile, 4-branch + logistics workflow, KB index |
-| `KB_05_Hack_Module.md` | Hack phase theory, four branches, stickiness test, Point of Intervention, Lean vs. Full Logistics, documentation |
-| `KB_05_Hack_Actions_A.md` | Hacking Tree output template (four branches) |
-| `KB_05_Hack_Actions_B.md` | Lean Logistics + Full Logistics templates |
-| `KB_05_Hack_Prompting.md` | Starter and power prompts for full-cycle and stand-alone use |
-| `KB_05_Hack_Tools.md` | No external tools; when to bring in creative collaborators |
+| `05a_Hack_Instructions.md` | System prompt: modes, stand-alone path with Audience Profile, 4-branch + logistics workflow, KB index |
+| `KB_05a_Hack_Module.md` | Hack phase theory, four branches, stickiness test, Point of Intervention, Lean vs. Full Logistics, documentation |
+| `KB_05a_Hack_Actions_A.md` | Hacking Tree output template (four branches) |
+| `KB_05a_Hack_Actions_B.md` | Lean Logistics + Full Logistics templates |
+| `KB_05a_Hack_Prompting.md` | Starter and power prompts for full-cycle and stand-alone use |
+| `KB_05a_Hack_Tools.md` | No external tools; when to bring in creative collaborators |
 
-**Receives:** Narrative Strategy + Recoded Message + Audience Profile(s) · **Produces:** Hacking Tree + Logistics Plan · **Passes to:** Agent 06
-*(6 files. Status: good enough — recommend a content read of Module + Actions during the next round.)*
+**Receives:** Narrative Strategy + Recoded Narrative (with Message) + Audience Profile(s) · **Produces:** Hacking Tree + Logistics Plan · **Passes to:** Agent 05b
+*(6 files. Status: good enough — verified in the v2.0.0 audit; Module + Actions A/B read in full and confirmed coherent.)*
 
 ---
 
-## Agent 06 · Impact — Evaluate + Iterate
+## Agent 05b · Impact — Evaluate + Iterate
 
-**Phase:** Hack (nested) — Evaluate + Iterate · **Primary users:** Practitioners post-launch or building pre-launch docs · **Stand-alone:** Yes
+**Phase:** Hack (05b) — Evaluate + Iterate (nested in Hack) · **Primary users:** Practitioners post-launch or building pre-launch docs · **Stand-alone:** Yes
 
 **What it does:** Four outputs — (A) Pre-Hack Documentation Plan, (B) Post-Hack Evaluation (three-level impact + A/B + iteration strategy), (C) Hack Database (nine-section synthesis; **this is the home of the full documentation database**), (D) Case Study. All close with three personal reflection questions. Iteration logic routes to the right next agent.
 
 | File | Contents |
 |------|---------|
-| `06_Impact_Instructions.md` | System prompt: four outputs with activation logic, dependency table, 4-step workflow, iteration routing |
-| `KB_06_Impact_Module.md` | Phase theory, three-level evaluation, closing questions, iteration logic table |
-| `KB_06_Impact_Actions_A.md` | Output A — Pre-Hack Documentation Plan |
-| `KB_06_Impact_Actions_B.md` | Output B — Post-Hack Evaluation |
-| `KB_06_Impact_Actions_C.md` | Output C — Hack Database (full documentation database) |
-| `KB_06_Impact_Actions_D.md` | Output D — Case Study |
-| `KB_06_Impact_Prompting.md` | Starter and power prompts per output |
+| `05b_Impact_Instructions.md` | System prompt: four outputs with activation logic, dependency table, 4-step workflow, iteration routing |
+| `KB_05b_Impact_Module.md` | Phase theory, three-level evaluation, closing questions, iteration logic table |
+| `KB_05b_Impact_Actions_A.md` | Output A — Pre-Hack Documentation Plan |
+| `KB_05b_Impact_Actions_B.md` | Output B — Post-Hack Evaluation |
+| `KB_05b_Impact_Actions_C.md` | Output C — Hack Database (full documentation database) |
+| `KB_05b_Impact_Actions_D.md` | Output D — Case Study |
+| `KB_05b_Impact_Prompting.md` | Starter and power prompts per output |
 
 **Receives:** Hacking Tree + Logistics Plan + full prior documentation · **Produces:** Output A, B, C, or D · **Passes to:** Agent 02a or 04
 *(7 files. No Tools file — none required.)*
@@ -198,9 +198,9 @@ These files are shared across all agents. They are never loaded by default — o
 | Agent 02a | Big Listening Inquiry | Agent 02b |
 | Agent 02b | Narrative Report + CSV Database + ANP Source Library | Agent 03 |
 | Agent 03 | Community Analysis Report + Narrative Map (incl. Narrative Intentions + Window of Discourse) | Agent 04 |
-| Agent 04 | Narrative Strategy + Recoded Narrative (with Message) + Audience Profile(s) | Agent 05 |
-| Agent 05 | Hacking Tree + Logistics Plan | Agent 06 |
-| Agent 06 | Case Study + updated POV | Agent 02a or 04 |
+| Agent 04 | Narrative Strategy + Recoded Narrative (with Message) + Audience Profile(s) | Agent 05a |
+| Agent 05a | Hacking Tree + Logistics Plan | Agent 05b |
+| Agent 05b | Case Study + updated POV | Agent 02a or 04 |
 
 ---
 
@@ -208,19 +208,40 @@ These files are shared across all agents. They are never loaded by default — o
 
 | Group | Files |
 |-------|-------|
-| Shared | 3 |
+| Shared (`KB_CHL_Method`, `KB_AI_Fluency`, `KB_Agent_Directory`) | 3 |
+| Shared skill (`KB_Tutorial_Builder`) | 1 |
 | Agent 00 | 4 |
 | Agent 01 | 5 |
 | Agent 02a | 6 |
 | Agent 02b | 6 |
 | Agent 03 | 6 |
-| Agent 04 | 5 (Actions split A/B/C; Prompting + Tools pending) |
-| Agent 05 | 6 |
-| Agent 06 | 7 |
-| **Agent + shared subtotal** | **48** |
+| Agent 04 | 7 (Actions split A/B/C; `KB_04_Recode_Prompting.md` + `KB_04_Recode_Tools.md` created in v2.0.0) |
+| Agent 05a | 6 |
+| Agent 05b | 7 |
+| **Agent + shared subtotal** | **51** |
 | Meta (INDEX, INSTALL, README, ARCHITECTURE) | 4 |
-| **Total** | **52** |
+| **Total** | **55** |
+
+*Note: Agent 04's Prompting and Tools KBs are being created in the v2.0.0 pass; until they land, 04 ships 5 files. `KB_Tutorial_Builder.md` is now counted as a shared skill.*
+
+---
+
+## Version Manifest
+
+*Single source of truth for file versions. A file's footer must match its row here. Before any release, diff footers against this table — a mismatch means a file didn't land. Version = the release in which the file last changed; untouched files keep their earlier version.*
+
+**Release v2.0.0 — 2026-07-05.** All files listed below are at **v2.0.0 · 2026-07-05** unless a later row says otherwise.
+
+Scope of the v2.0.0 release: introduced file versioning; renamed `KB_AI_Fluency_v3.md` → `KB_AI_Fluency.md` and re-landed the corrected `KB_00_QA_Module.md`; renumbered Agent 05→05a (Hack) and Agent 06→05b (Impact), folding Evaluate into the Hack phase; added phase words to the 02a/02b/03 stems (`02a_Listen_`, `02b_Research_`, `03_Understand_`); aligned handoff labels across the chain (Community Analysis Report · Recoded Narrative (with Message) · Logistics Plan · Post-Hack Evaluation); "AI Agent Suite" → "AI Agent System"; created Agent 04's Prompting + Tools KBs; and applied the Agent 03 content fixes. Full detail in `CHL_Agent_System_Changelog.md` (Session 4).
+
+| File | Version | Updated |
+|------|---------|---------|
+| *All shared, agent, and meta files* | v2.0.0 | 2026-07-05 |
+
+*(When only some files change in a later release, replace this single row with per-file rows for the changed files and leave the rest at their last-touched version.)*
 
 ---
 
 *For deployment instructions, see [`INSTALL.md`](INSTALL.md). For multi-agent architecture, see [`ARCHITECTURE.md`](ARCHITECTURE.md).*
+
+*v2.0.0 · updated 2026-07-05 · CHL AI Agent System.*

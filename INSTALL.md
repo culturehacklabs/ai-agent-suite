@@ -16,7 +16,7 @@ These are the **reference documents** the agent draws on: phase theory, output t
 
 The split is intentional: the Instructions file is lean and stable; the KB files are modular and loaded on demand.
 
-**A note on file sets:** the KB set is not identical across agents. Some agents split their Actions KB (Agent 04: A/B/C; Agent 05: A/B; Agent 06: A/B/C/D), and some add specialised KBs (Agent 02a: `KB_02a_SmallListening.md`; Agent 02b: `KB_02b_MultiInquiry.md`; Agent 03: `KB_03_MapCheck.md`). Always upload the files that actually exist for that agent — see `INDEX.md` for the authoritative per-agent file list.
+**A note on file sets:** the KB set is not identical across agents. Some agents split their Actions KB (Agent 04: A/B/C; Agent 05a: A/B; Agent 05b: A/B/C/D), and some add specialised KBs (Agent 02a: `KB_02a_Listen_SmallListening.md`; Agent 02b: `KB_02b_Research_MultiInquiry.md`; Agent 03: `KB_03_Understand_MapCheck.md`). Always upload the files that actually exist for that agent — see `INDEX.md` for the authoritative per-agent file list.
 
 ---
 
@@ -57,7 +57,7 @@ Same approach: Instructions as system prompt, KB files as context.
 Agent 02b executes Big Listening. The Claude-native version uses **Exa Search MCP** and **Claude Research Mode**. On a self-hosted LLM or a service without web access:
 - Run web research manually and paste results in, or
 - Use a separate research tool (Perplexity, Tavily, SerpAPI, etc.) and bring outputs into the agent, or
-- Configure a web-search tool / RAG pipeline and update `KB_02b_Tools.md` accordingly.
+- Configure a web-search tool / RAG pipeline and update `KB_02b_Research_Tools.md` accordingly.
 
 The 02b KBs describe the *process and outputs* — what to collect, how to structure the CSV — regardless of which tool searches. Swap the tool, keep the process.
 
@@ -82,9 +82,9 @@ Handoffs are manual — copy outputs from one agent and paste them into the next
 | Agent 02a | Big Listening Inquiry | Agent 02b |
 | Agent 02b | Narrative Report + CSV Database + ANP Source Library | Agent 03 |
 | Agent 03 | Community Analysis Report + Narrative Map (incl. Narrative Intentions + Window of Discourse) | Agent 04 |
-| Agent 04 | Narrative Strategy + Recoded Narrative (with Message) | Agent 05 |
-| Agent 05 | Hacking Tree + Logistics Plan | Agent 06 |
-| Agent 06 | Case Study + updated POV | Agent 02a or 04 |
+| Agent 04 | Narrative Strategy + Recoded Narrative (with Message) | Agent 05a |
+| Agent 05a | Hacking Tree + Logistics Plan | Agent 05b |
+| Agent 05b | Case Study + updated POV | Agent 02a or 04 |
 
 A simple preamble helps orient the next agent:
 
@@ -112,7 +112,7 @@ Loaded conditionally, never by default:
 
 ## Phased Rollout (current)
 
-Agents 00, 01, 02a, and 02b are deployment-ready. Agents 03, 04, and 05 have open items (see the audit / change log): Agent 03 has two content fixes pending, and Agent 04 is missing its Prompting and Tools KBs. Deploy the ready agents first; add 03–06 as their fixes land.
+Agents 00, 01, 02a, and 02b are deployment-ready. Agents 03 and 04 have open items (see the audit / change log): Agent 03 has content fixes pending, and Agent 04 is missing its Prompting and Tools KBs. Agent 05a (Hack) is verified; Agent 05b (Impact) is ready. Deploy the ready agents first; add 03–05b as their fixes land.
 
 ---
 
@@ -126,3 +126,5 @@ Agents 00, 01, 02a, and 02b are deployment-ready. Agents 03, 04, and 05 have ope
 ---
 
 *For the full agent and file index, see [`INDEX.md`](INDEX.md). For multi-agent architecture design, see [`ARCHITECTURE.md`](ARCHITECTURE.md).*
+
+*v2.0.0 · updated 2026-07-05 · CHL AI Agent System.*
