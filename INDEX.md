@@ -126,7 +126,7 @@ These files are shared across all agents. They are never loaded by default — o
 | `KB_03_Understand_MapCheck.md` | Map Check-in protocol — the co-creation moment between ANP and Language Analysis |
 
 **Receives:** Narrative Report + CSV Database + ANP Source Library + Handoff Checklist · **Produces:** Community Analysis Report + Narrative Map · **Passes to:** Agent 04
-*(6 files. Status: needs revision — see audit. Known issues: missing Window-of-Discourse heading in the Module; Mermaid coordinate inconsistency between MapCheck and Actions/Tools.)*
+*(6 files.)*
 
 ---
 
@@ -143,9 +143,11 @@ These files are shared across all agents. They are never loaded by default — o
 | `KB_04_Recode_Actions_A.md` | Audience + Audience Profile templates |
 | `KB_04_Recode_Actions_B.md` | Decode table + Recode table (eight lenses), Message block, framing synthesis |
 | `KB_04_Recode_Actions_C.md` | Narrative Strategy template |
+| `KB_04_Recode_Prompting.md` | Starter and power prompts (finding the message, metaphor lens, slogan-vs-message, audience coherence) |
+| `KB_04_Recode_Tools.md` | No external tools; generative approach and the 4Ds applied to recoding |
 
 **Receives:** Community Analysis Report + Narrative Map + Window of Discourse · **Produces:** Narrative Strategy + Recoded Narrative (with Message) + Audience Profile(s) · **Passes to:** Agent 05a
-*(5 files. Status: needs revision — `KB_04_Recode_Prompting.md` and `KB_04_Recode_Tools.md` are referenced by the Instructions but not yet created. Pending.)*
+*(7 files.)*
 
 ---
 
@@ -222,7 +224,7 @@ These files are shared across all agents. They are never loaded by default — o
 | Meta (INDEX, INSTALL, README, ARCHITECTURE) | 4 |
 | **Total** | **55** |
 
-*Note: Agent 04's Prompting and Tools KBs are being created in the v2.0.0 pass; until they land, 04 ships 5 files. `KB_Tutorial_Builder.md` is now counted as a shared skill.*
+*Note: `KB_Tutorial_Builder.md` is counted as a shared skill.*
 
 ---
 

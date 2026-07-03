@@ -67,7 +67,7 @@ The 02b KBs describe the *process and outputs* — what to collect, how to struc
 
 Run any agent in one conversation: paste a brief version of the Instructions, then paste the Module + Actions KBs you need, then your input. Works well for one-off tasks and workshops.
 
-**Works well in single-chat:** POV development (01), Decode/Recode of a message (04 stand-alone), Hacking Tree for a campaign action (05 stand-alone), case study reconstruction (06).
+**Works well in single-chat:** POV development (01), Decode/Recode of a message (04 stand-alone), Hacking Tree for a campaign action (05a stand-alone), case study reconstruction (05b).
 **Works less well:** Agent 02b (web research tools unavailable without separate configuration) and Agent 03 (full ANP analysis works best with the complete KB set and iterative conversation).
 
 ---
@@ -82,7 +82,7 @@ Handoffs are manual — copy outputs from one agent and paste them into the next
 | Agent 02a | Big Listening Inquiry | Agent 02b |
 | Agent 02b | Narrative Report + CSV Database + ANP Source Library | Agent 03 |
 | Agent 03 | Community Analysis Report + Narrative Map (incl. Narrative Intentions + Window of Discourse) | Agent 04 |
-| Agent 04 | Narrative Strategy + Recoded Narrative (with Message) | Agent 05a |
+| Agent 04 | Narrative Strategy + Recoded Narrative (with Message) + Audience Profile(s) | Agent 05a |
 | Agent 05a | Hacking Tree + Logistics Plan | Agent 05b |
 | Agent 05b | Case Study + updated POV | Agent 02a or 04 |
 
@@ -112,7 +112,7 @@ Loaded conditionally, never by default:
 
 ## Phased Rollout (current)
 
-Agents 00, 01, 02a, and 02b are deployment-ready. Agents 03 and 04 have open items (see the audit / change log): Agent 03 has content fixes pending, and Agent 04 is missing its Prompting and Tools KBs. Agent 05a (Hack) is verified; Agent 05b (Impact) is ready. Deploy the ready agents first; add 03–05b as their fixes land.
+All eight agents (00, 01, 02a, 02b, 03, 04, 05a, 05b) are deployment-ready at v2.0.0. Agent 03's content fixes and Agent 04's Prompting and Tools KBs landed in this release. Deploy any agent as needed; handoffs between them remain manual.
 
 ---
 
