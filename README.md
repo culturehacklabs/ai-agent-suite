@@ -95,7 +95,7 @@ The exact file set varies by agent — some split their Actions KB and some add 
 
 This toolkit is built on the Culture Hack Method curriculum developed by [Culture Hack Labs](https://www.culturehack.io/curriculum/the-culture-hack-method/). The method, concepts, and political framework are CHL's. The agents translate that curriculum into AI-assisted practice.
 
-The 4Ds are part of Anthorpic's [AI Fluency](https://anthropic.skilljar.com/ai-fluency-framework-foundations) course released under CC BY-NC-SA 4.0 license.
+The 4Ds are part of Anthorpic's [AI Fluency]([https://www.culturehack.io/curriculum/the-culture-hack-method/](https://anthropic.skilljar.com/ai-fluency-framework-foundations) course released under CC BY-NC-SA 4.0 license.
 
 Rhizome Fellowship practitioners: these agents are designed with your context in mind, including the Five Pathways to Regenerative Futures as an optional framework in Agent 01.
 
